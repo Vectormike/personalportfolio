@@ -84,7 +84,8 @@ export const Button = styled.a`
 export const Thumbnail = styled.div`
   flex: 1;
   @media (max-width: 960px) {
-    width: 50%;
+    width: 100%;
+    text-align: center;
   }
 
   img {
