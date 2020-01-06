@@ -6,7 +6,10 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  a {
-    color: #212121;
+  .name {
+    color: #1599f5;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-decoration: none;
   }
 `;
