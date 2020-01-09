@@ -3,7 +3,7 @@ import { Wrapper, Text } from './styles';
 
 const CardHeader = () => (
   <Wrapper>
-    <Text></Text>
+    <Text>Project 1</Text>
   </Wrapper>
 );
 

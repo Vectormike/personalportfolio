@@ -26,9 +26,9 @@ export const Intro = () => (
           </Button>
         </Flex>
       </Details>
-      <Thumbnail>
+      {/* <Thumbnail>
         <img src={dev} alt="Hi, I’m Victor. I’m a Full-Stack JavaScript Developer!" />
-      </Thumbnail>
+      </Thumbnail> */}
     </IntroWrapper>
   </Wrapper>
 );
