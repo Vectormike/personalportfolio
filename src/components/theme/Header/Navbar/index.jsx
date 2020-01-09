@@ -6,7 +6,9 @@ import { Wrapper } from './styles';
 
 const Navbar = () => (
   <Wrapper as={Container}>
-    <Link className="name" as={AnchorLink} to="/">Victor Jonah</Link>
+    <Link className="name" as={AnchorLink} to="/">
+      Victor Jonah
+    </Link>
     <NavbarLinks desktop />
   </Wrapper>
 );

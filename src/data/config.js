@@ -2,15 +2,15 @@ module.exports = {
   defaultTitle: 'Victor Jonah',
   logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
   author: 'Victor Jonah',
-  url: 'https://portfolio.smakosh.com',
+  url: '',
   legalName: 'Victor Jonah',
   defaultDescription: 'Hi, I’m Victor. I’m a Full-Stack JavaScript Developer!',
   socialLinks: {
     twitter: 'http://www.twitter.com/Vectormike_',
     github: 'https://github.com/Vectormike',
-    linkedin: 'https://www.linkedin.com/in/ismail-ghallou-630149122/',
+    linkedin: '',
   },
-  googleAnalyticsID: 'UA-88875900-4',
+  googleAnalyticsID: '',
   themeColor: '#6b63ff',
   backgroundColor: '#6b63ff',
   social: {
@@ -19,7 +19,7 @@ module.exports = {
   },
   address: {
     city: 'Uyo',
-    region: 'Region',
+    region: 'Uyo Town',
     country: 'Nigeria',
     zipCode: 'ZipCode',
   },
