@@ -1,12 +1,24 @@
 import React from 'react';
-import { CardHolder } from 'components/common/';
-import { Wrapper, Title, Work } from './styles';
+import { CardHolder, Container } from 'components/common/';
+import { Wrapper, Grid, Title, Work } from './styles';
+
+import Project from '../../../../content/projects.yaml';
 
 export const Projects = () => (
-  <Wrapper>
-    <Title>Hi</Title>
+  <Wrapper as={Container}>
+    <Title>Projects</Title>
     <Work>
-      <CardHolder />
+      <Grid>
+        {Project.map((data, index) => (
+          <CardHolder
+            key={index}
+            title={data.title}
+            image={data.image}
+            link={data.link}
+            description={data.description}
+          />
+        ))}
+      </Grid>
     </Work>
   </Wrapper>
 );
