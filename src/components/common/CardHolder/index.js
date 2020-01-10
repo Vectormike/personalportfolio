@@ -4,12 +4,12 @@ import CardBody from './components/CardBody/CardBody';
 import CardFooter from './components/CardFooter/CardFooter';
 import { Wrapper, StyledCard } from './styles';
 
-export const CardHolder = () => (
+export const CardHolder = ({ title, image, link, description }) => (
   <Wrapper>
     <StyledCard>
-      <CardHeader />
-      <CardBody />
-      <CardFooter />
+      <CardHeader title={title} />
+      <CardBody title={title} link={link} image={image} />
+      <CardFooter description={description} />
     </StyledCard>
   </Wrapper>
 );
