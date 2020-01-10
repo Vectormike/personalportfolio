@@ -14,6 +14,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
+    'gatsby-transformer-yaml',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-graphql',
@@ -72,5 +73,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content`,
+        name: ' posts',
+      },
+    },
   ],
 };
