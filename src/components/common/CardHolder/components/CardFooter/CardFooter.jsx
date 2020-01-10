@@ -1,9 +1,9 @@
 import React from 'react';
 import { Wrapper, Paragraph } from './styles';
 
-const CardFooter = () => (
+const CardFooter = ({ description }) => (
   <Wrapper>
-    <Paragraph></Paragraph>
+    <Paragraph>{description}</Paragraph>
   </Wrapper>
 );
 

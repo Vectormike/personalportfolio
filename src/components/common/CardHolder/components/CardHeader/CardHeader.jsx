@@ -1,9 +1,9 @@
 import React from 'react';
 import { Wrapper, Text } from './styles';
 
-const CardHeader = () => (
+const CardHeader = ({ title }) => (
   <Wrapper>
-    <Text>Project 1</Text>
+    <Text>{title}</Text>
   </Wrapper>
 );
 

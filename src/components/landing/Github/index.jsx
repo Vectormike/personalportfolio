@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Card } from 'components/common';
 import starIcon from 'assets/icons/star.svg';
 import forkIcon from 'assets/icons/fork.svg';
-import { Wrapper, Grid, Item, Content, Stats } from './styles';
+import { Wrapper, Title, Grid, Item, Content, Stats } from './styles';
 
 export const Github = () => {
   const {
@@ -38,7 +38,7 @@ export const Github = () => {
   );
   return (
     <Wrapper as={Container} id="projects">
-      <h2>Works</h2>
+      <Title>Works</Title>
       <Grid>
         {edges.map(({ node }) => (
           <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer">
