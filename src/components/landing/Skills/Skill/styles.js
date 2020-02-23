@@ -25,3 +25,7 @@ export const Grow = styled.img`
 export const Name = styled.h4`
   font-weight: normal;
 `;
+
+export const Title = styled.h4`
+  font-weight: normal;
+`;
