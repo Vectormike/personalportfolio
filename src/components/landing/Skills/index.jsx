@@ -2,25 +2,22 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Container, Button } from 'components/common';
 import dev from 'assets/illustrations/skills.svg';
-import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
+import { Wrapper, SkillsWrapper, Details, Flex, Thumbnail } from './styles';
 import Skill from './Skill/index';
 
 export const Skills = () => (
   <Wrapper id="about">
-    <SkillsWrapper as={Container}>
+    <Container>
       <Thumbnail>
         <img src={dev} alt="Hi, I’m Victor. I’m a Full-Stack JavaScript Developer!" />
       </Thumbnail>
-      <Details>
-        <h1>Hi There!</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
-          standard dummy.
-        </p>
-        <Button as={AnchorLink} href="#contact">
-          Hire me
-        </Button>
-      </Details>
-    </SkillsWrapper>
+
+      <Flex>
+        <Skill />
+      </Flex>
+      <Button as={AnchorLink} href="#contact">
+        Hire me
+      </Button>
+    </Container>
   </Wrapper>
 );
