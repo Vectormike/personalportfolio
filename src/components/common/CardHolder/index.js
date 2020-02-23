@@ -5,7 +5,7 @@ import CardFooter from './components/CardFooter/CardFooter';
 import { Wrapper, StyledCard } from './styles';
 
 export const CardHolder = ({ title, image, link, description }) => (
-  <Wrapper>
+  <Wrapper as="a" href={link}>
     <StyledCard>
       <CardHeader title={title} />
       <CardBody title={title} link={link} image={image} />

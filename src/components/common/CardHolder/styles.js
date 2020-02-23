@@ -1,32 +1,13 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-	height: 100%;
-	${({ id }) =>
-    id === 0 &&
-    `
-		@media (max-width: 680px) {
-			grid-row: 3;
-		}
-	`}
-	${({ id }) =>
-    id === 1 &&
-    `
-		@media (max-width: 680px) {
-			grid-row: 2;
-		}
-	`}
-	${({ id }) =>
-    id === 2 &&
-    `
-		@media (max-width: 680px) {
-			grid-row: 1;
-		}
-	`}
+  height: 100%;
+  width: 100%;
 `;
 
 export const StyledCard = styled.div`
   height: 100%;
+  width: 100%;
   border-radius: 2px;
   background: #fff;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
@@ -46,10 +27,4 @@ export const StyledCard = styled.div`
       }
     }
   }
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-		background: #2b2a2a;
-		color: #fff;
-	`};
 `;
