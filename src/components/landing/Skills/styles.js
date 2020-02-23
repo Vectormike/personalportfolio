@@ -8,6 +8,30 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
 `;
 
+export const Flex = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2rem 0;
+  max-width: 960px;
+  margin: 0 auto;
+  @media (max-width: 680px) {
+    flex-direction: column;
+  }
+`;
+
+export const Container = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 90%;
+  @media (min-width: 601px) {
+    width: 90%;
+  }
+  @media (min-width: 993px) {
+    width: 80%;
+  }
+`;
+
 export const SkillsWrapper = styled.div`
   padding: 4rem 0;
   display: flex;
