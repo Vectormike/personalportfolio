@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 2rem 2rem;
+  padding: 2rem 0rem;
   ${'' /* background-image: url(${overlayIllustration}); */}
   ${'' /* background-size: contain;
   background-position: right top;
@@ -14,10 +14,11 @@ export const Title = styled.h2`
 
 export const Grid = styled.div`
   display: grid;
+  width: 100%;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 8fr;
-  gap: 1.2rem 1.2rem;
+  gap: 1.2rem 3.2rem;
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(2, 1fr);
