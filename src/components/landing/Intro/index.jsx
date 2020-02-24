@@ -12,7 +12,8 @@ export const Intro = () => (
       <Details>
         <h4>Hi, I’m Victor Jonah.</h4>
         <h4>Also known as Vectormike. I'm Full Stack JavaScript Developer, & Dog lover!</h4>
-        <h6>I love everything about Software Web development.</h6>
+        <h3>I love everything about Software Web development.</h3>
+        <p>With skills in <i class="fab fa-react"></i> <i class="fab fa-node"></i> <i class="fab fa-sass"></i> <i class="fab fa-git"></i></p>
         <Flex>
           <Button
             rel="noopener noreferrer"
@@ -26,9 +27,9 @@ export const Intro = () => (
           </Button>
         </Flex>
       </Details>
-      {/* <Thumbnail>
+      <Thumbnail>
         <img src={dev} alt="Hi, I’m Victor. I’m a Full-Stack JavaScript Developer!" />
-      </Thumbnail> */}
+      </Thumbnail>
     </IntroWrapper>
   </Wrapper>
 );
