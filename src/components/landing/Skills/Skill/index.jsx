@@ -1,9 +1,9 @@
 import React from 'react';
-import { Wrapper, Name, Grow } from './styles';
+import { Wrapper, Grow, Title } from './styles';
 
-export default () => (
+export const Skill = ({ icon, title }) => (
   <Wrapper>
-    <Grow />
-    <Name>Name</Name>
+    <Grow src={icon} alt={title} />
+    <Title>{title}</Title>
   </Wrapper>
 );
