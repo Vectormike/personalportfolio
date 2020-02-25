@@ -1,81 +1,65 @@
 import styled from 'styled-components';
-import detailsIllustration from 'assets/illustrations/details.svg';
 
 export const Wrapper = styled.div`
-  background-image: url(${detailsIllustration});
-  background-size: contain;
-  background-position: left top;
-  background-repeat: no-repeat;
+  padding: 2rem 2rem;
 `;
 
-export const Flex = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 2rem 0;
-  max-width: 960px;
-  margin: 0 auto;
-  @media (max-width: 680px) {
-    flex-direction: column;
-  }
+export const Title = styled.h2`
+  color: #212121;
 `;
 
-export const Container = styled.div`
-  max-width: 1280px;
-  margin: 0 auto;
-  width: 90%;
-  @media (min-width: 601px) {
-    width: 90%;
-  }
-  @media (min-width: 993px) {
-    width: 80%;
-  }
-`;
-
-export const SkillsWrapper = styled.div`
-  padding: 4rem 0;
-  display: flex;
+export const Grid = styled.div`
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 8fr;
+  gap: 1.2rem 1.2rem;
 
   @media (max-width: 960px) {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
   }
 `;
 
-export const Details = styled.div`
-  flex: 1;
-  padding-left: 2rem;
+export const Item = styled.div`
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
 
-  @media (max-width: 960px) {
-    padding-left: unset;
-    width: 100%;
-  }
-
-  h1 {
-    margin-bottom: 2rem;
-    font-size: 26pt;
+  h4 {
     color: #212121;
   }
 
   p {
-    margin-bottom: 2.5rem;
-    font-size: 20pt;
-    font-weight: normal;
-    line-height: 1.3;
     color: #707070;
   }
 `;
 
-export const Thumbnail = styled.div`
-  flex: 1;
+export const Content = styled.div`
+  padding: 1rem 0;
+`;
 
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
+export const Stats = styled.div`
+  display: flex;
+  align-items: center;
 
-  img {
-    width: 100%;
+  div {
+    display: flex;
+    &:first-child {
+      margin-right: 0.5rem;
+    }
+
+    img {
+      margin: 0;
+    }
+
+    span {
+      color: #000;
+      margin-left: 0.5rem;
+    }
   }
 `;
