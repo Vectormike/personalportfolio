@@ -1,24 +1,40 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import { CardHolder, Container } from 'components/common/';
-import { Wrapper, Grid, Title, Work } from './styles';
+import { Wrapper, Grid, Title } from './styles';
 
-import Project from '../../../../content/projects.yaml';
+export const Projects = () => {
+  const {
+    projects: { edges },
+  } = useStaticQuery(graphql`
+    query {
+      projects: allProjectsYaml {
+        edges {
+          node {
+            id
+            title
 
-export const Projects = () => (
-  <Wrapper as={Container}>
-    <Title>Projects</Title>
-    <Work>
+            link
+            description
+          }
+        }
+      }
+    }
+  `);
+  return (
+    <Wrapper as={Container}>
+      <Title>Projects</Title>
       <Grid>
-        {Project.map((data, index) => (
+        {edges.map(({ node }) => (
           <CardHolder
-            key={index}
-            title={data.title}
-            image={data.image}
-            link={data.link}
-            description={data.description}
+            key={node.id}
+            title={node.title}
+            image={node.image}
+            link={node.link}
+            description={node.description}
           />
         ))}
       </Grid>
-    </Work>
-  </Wrapper>
-);
+    </Wrapper>
+  );
+};
