@@ -13,7 +13,6 @@ export const Intro = () => (
         <h4>Hi, I’m Victor Jonah.</h4>
         <h4>Also known as Vectormike. I'm Full Stack JavaScript Developer, & Dog lover!</h4>
         <h3>I love everything about Software Web development.</h3>
-        <p>With skills in <i class="fab fa-react"></i> <i class="fab fa-node"></i> <i class="fab fa-sass"></i> <i class="fab fa-git"></i></p>
         <Flex>
           <Button
             rel="noopener noreferrer"
