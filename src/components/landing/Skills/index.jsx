@@ -1,23 +1,33 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Container, Button } from 'components/common';
-import dev from 'assets/illustrations/skills.svg';
-import { Wrapper, SkillsWrapper, Details, Flex, Thumbnail } from './styles';
-import Skill from './Skill/index';
+import { useStaticQuery, graphql } from 'gatsby';
+import { Container } from 'components/common';
+import { Wrapper, Title, Grid } from './styles';
+import { Skill } from './Skill/index';
 
-export const Skills = () => (
-  <Wrapper id="about">
-    <Container>
-      <Thumbnail>
-        <img src={dev} alt="Hi, I’m Victor. I’m a Full-Stack JavaScript Developer!" />
-      </Thumbnail>
-
-      <Flex>
-        <Skill />
-      </Flex>
-      <Button as={AnchorLink} href="#contact">
-        Hire me
-      </Button>
-    </Container>
-  </Wrapper>
-);
+export const Skills = () => {
+  const {
+    skills: { edges },
+  } = useStaticQuery(graphql`
+    query {
+      skills: allSkillsYaml {
+        edges {
+          node {
+            id
+            title
+            icon
+          }
+        }
+      }
+    }
+  `);
+  return (
+    <Wrapper as={Container} id="projects">
+      <Title>Top Skills</Title>
+      <Grid>
+        {edges.map(({ node }) => (
+          <Skill key={node.id} title={node.title} icon={node.icon} />
+        ))}
+      </Grid>
+    </Wrapper>
+  );
+};
