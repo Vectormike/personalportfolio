@@ -38,7 +38,7 @@ export const Github = () => {
   );
   return (
     <Wrapper as={Container} id="projects">
-      <Title>Works</Title>
+      <Title>Works on Github</Title>
       <Grid>
         {edges.map(({ node }) => (
           <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer">
