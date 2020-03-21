@@ -13,7 +13,13 @@ export const Projects = () => {
           node {
             id
             title
-
+            image {
+              childImageSharp {
+                fluid {
+                  src
+                }
+              }
+            }
             link
             description
           }
