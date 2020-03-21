@@ -1,5 +1,5 @@
 - title: "Node/Express"
-  icon: "/skills/coder.svg"
+  icon: "../src/assets/illustrations/node.svg"
 - title: "JavaScript/React"
   icon: "/skills/react.svg"
 - title: "SQL & NoSQL"

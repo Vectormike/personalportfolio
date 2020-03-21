@@ -1,8 +1,24 @@
 - title: Xshare
-  image: "../src/assets/images/xshare.png"
-  link: http://xshare.com
+  image: "../src/assets/images/projects/me.jpg"
+  link: http://xshare.ga
   description: File sharing application
 - title: Moviemania
   image: "../src/assets/images/xshare.png"
   link: https://naughty-hoover-fe3cac.netlify.com/
-  description: Trending, Recent and Most-rated movies. 
+  description: Trending, Recent and Most-rated movies.
+- title: Imagesearch
+  image: ""
+  link: https://vectormike.github.io/imagesearch/
+  description: A Web Application built with React, Hooks & fetching an API with endpoints of searched images from a user.
+- title: Personal Portfolio
+  image: ""
+  link: https://fervent-curran-ad3f0b.netlify.com/
+  description: Minimalist Design, Gatsby, styled-components, React Hooks, and GraphQL, but with local data.
+- title: Vectorcodes
+  image: ""
+  link: https://www.vectormike.codes/
+  description: A minimalist blog with Topics-Articles on Sofware Engineering. Designed with Gatsby, GraphQL, and SASS
+- title: vectorbottress
+  image: ""
+  link: https://twitter.com/vectorbottress
+  description: Twitter bot, Retweets and likes related tweets on JavaScript, Express, Postgesql, Node & React.
