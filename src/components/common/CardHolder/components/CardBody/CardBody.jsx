@@ -4,7 +4,7 @@ import { Wrapper } from './styles';
 
 const CardBody = ({ image, title }) => (
   <Wrapper>
-    <img src={image.childImageSharp.src} alt={title} />{' '}
+    <img src={image} alt={title} />{' '}
   </Wrapper>
 );
 
