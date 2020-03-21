@@ -16,6 +16,8 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-catch-links',
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-source-graphql',
       options: {
@@ -32,7 +34,7 @@ module.exports = {
       resolve: 'gatsby-plugin-nprogress',
       options: {
         color: config.themeColor,
-        showSpinner: false,
+        showSpinner: true,
       },
     },
     {
@@ -78,12 +80,23 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.defaultTitle,
-        short_name: 'starter',
+        short_name: config.defaultTitle,
         start_url: '/',
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'minimal-ui',
-        icon: './static/favicon/favicon-512.png',
+        icons: [
+          {
+            src: '/favicon/logo-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/favicon/logo-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
       },
     },
     'gatsby-plugin-offline',
