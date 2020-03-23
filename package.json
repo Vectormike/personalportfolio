@@ -5,7 +5,12 @@
   "version": "0.1.2",
   "author": "Victor Jonah <victorjonah199@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "dotenv": "^6.2.0",
+    "fontawesome": "^5.6.3",
     "formik": "^1.4.1",
     "gatsby": "^2.17.7",
     "gatsby-image": "^2.2.30",
