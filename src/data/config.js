@@ -8,7 +8,7 @@ module.exports = {
   socialLinks: {
     twitter: 'http://www.twitter.com/Vectormike_',
     github: 'https://github.com/Vectormike',
-    linkedin: '',
+    linkedin: 'https://linkedIn.com/Vectormike',
   },
   googleAnalyticsID: '',
   themeColor: '#6b63ff',
