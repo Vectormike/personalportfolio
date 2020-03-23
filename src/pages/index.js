@@ -10,5 +10,6 @@ export default () => (
     <Github />
     <OpenSource />
     <Skills />
+    <Contact />
   </Layout>
 );
