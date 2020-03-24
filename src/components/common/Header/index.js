@@ -4,12 +4,12 @@ import styled from 'styled-components';
 
 const HeadingWrapper = styled.div`
   text-align: center;
-  margin-bottom: 7rem;
+  margin-bottom: 1rem;
   @media only screen and (max-width: 56.25em) {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   @media only screen and (max-width: 31.25em) {
-    margin-bottom: 4.5rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -17,7 +17,7 @@ const Title = styled.h1`
   font-size: 2.5rem;
   margin: 0;
   margin-bottom: 1rem;
-  color: var(--primary);
+  color: #127eb1;
   text-transform: uppercase;
   font-weight: 700;
   transition: color 0.2s ease-out;
@@ -32,11 +32,11 @@ const Title = styled.h1`
 const SubTitle = styled.h2`
   font-size: 2rem;
   margin: 0;
-  color: var(--text);
+  color: #575757;
   font-weight: 400;
   transition: color 0.2s ease-out;
   & span {
-    color: var(--text-highlight);
+    color: #333;
     font-style: italic;
     font-weight: 600;
     transition: color 0.2s ease-out;
