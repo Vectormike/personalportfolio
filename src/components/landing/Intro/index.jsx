@@ -1,34 +1,56 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Header } from 'components/theme';
-import { Container } from 'components/common';
-import dev from 'assets/illustrations/dev.svg';
-import { Wrapper, IntroWrapper, Details, Thumbnail, Button, Flex } from './styles';
+import { Container, WordsFading } from 'components/common';
+// import dev from 'assets/illustrations/dev.svg';
+import { config, useSpring } from 'react-spring';
+import { Wrapper, IntroWrapper, SmallWrapper, Title, SubTitle, Thumbnail, Button, Flex } from './styles';
 
-export const Intro = () => (
-  <Wrapper>
-    <Header />
-    <IntroWrapper as={Container}>
-      <Details>
-        <h4>Hi, I’m Victor Jonah.</h4>
-        <h4>Also known as Vectormike. I'm a Full Stack JavaScript Developer, & Dog lover!</h4>
-        <h3>I love everything about Software Web development.</h3>
-        <Flex>
-          <Button
-            rel="noopener noreferrer"
-            href="https://drive.google.com/open?id=1WyXSyyfyWengLRt-yFr67vZZrc3cV5Hl"
-            target="_blank"
-          >
-            View Resume
-          </Button>
-          <Button as={AnchorLink} href="#contact">
-            Hire me
-          </Button>
-        </Flex>
-      </Details>
-      <Thumbnail>
-        <img src={dev} alt="Hi, I’m Victor. I’m a Full-Stack JavaScript Developer!" />
-      </Thumbnail>
-    </IntroWrapper>
-  </Wrapper>
-);
+export const Intro = () => {
+  const TitleSpring = useSpring({
+    config: config.wobbly,
+    delay: 800,
+    opacity: 1,
+    transform: 'translateX(0px)',
+    from: { opacity: 0, transform: 'translateX(40px)' },
+  });
+
+  return (
+    <Wrapper>
+      <Header />
+      <IntroWrapper as={Container}>
+        <SmallWrapper>
+          <Title className="animated bounceInRight" title={TitleSpring}>
+            Hi{' '}
+            <span role="img" aria-label="Smile">
+              😊
+            </span>{' '}
+            , I’m Victor
+          </Title>
+          <SubTitle>
+            <h3 className="animated bounceInLeft">
+              A <WordsFading /> Full Stack JavaScript Developer
+            </h3>
+          </SubTitle>
+          <Flex>
+            <Button
+              className="animated tada animation-iteration-count-infinite"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/open?id=1WyXSyyfyWengLRt-yFr67vZZrc3cV5Hl"
+              target="_blank"
+            >
+              View Resume
+            </Button>
+            <Button as={AnchorLink} href="#contact">
+              Hire me
+            </Button>
+          </Flex>
+        </SmallWrapper>
+
+        {/* <Thumbnail>
+          <img src={dev} alt="Hi, I’m Victor. I’m a Full-Stack JavaScript Developer!" />
+        </Thumbnail> */}
+      </IntroWrapper>
+    </Wrapper>
+  );
+};

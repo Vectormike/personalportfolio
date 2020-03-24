@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import overlayIllustration from 'assets/illustrations/overlay.svg';
+import { animated, config, useSpring } from 'react-spring';
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
@@ -7,6 +8,11 @@ export const Wrapper = styled.div`
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
+`;
+
+export const SmallWrapper = styled.div`
+  width: 90%;
+  margin: 0 auto;
 `;
 
 export const IntroWrapper = styled.div`
@@ -19,6 +25,53 @@ export const IntroWrapper = styled.div`
     flex-direction: column;
   }
 `;
+
+export const Title = styled(animated.h1)`
+  font-weight: 100;
+  margin: 0;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.2s ease-out;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 6rem;
+  }
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2.5rem;
+  }
+  @media only screen and (max-width: 31.25em) {
+    font-size: 2rem;
+  }
+  & span {
+    font-weight: 600;
+    color: #089eca;
+    transition: color 0.2s ease-out;
+  }
+`;
+
+export const SubTitle = styled(animated.h2)`
+  color: var(--text);
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 7rem;
+  font-size: 1.8rem;
+  transition: color 0.2s ease-out;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.7rem;
+  }
+  @media only screen and (max-width: 25em) {
+    font-size: 1.5rem;
+  }
+`;
+
+// export const TitleSpring = useSpring({
+//   config: config.wobbly,
+//   delay: 200,
+//   opacity: 1,
+//   transform: 'translateX(0px)',
+//   from: { opacity: 0, transform: 'translateX(40px)' },
+// });
 
 export const Details = styled.div`
   flex: 1;
@@ -87,15 +140,16 @@ export const Thumbnail = styled.div`
     width: 100%;
     height: 100%;
   }
-  /* Mobiles */
-  ${'' /* 0@media screen and (max-width: 425px) {
-    width: 100%;
+
+  @media screen and (max-width: 425px) {
+    width: 1000%;
     height: 20px;
-  } */}
+  }
 `;
 
 export const Flex = styled.div`
   display: flex;
+  padding-top: 8rem;
   align-items: center;
   @media (max-width: 380px) {
     flex-direction: column;
