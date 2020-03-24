@@ -10,28 +10,28 @@ const WORDS = [
 
 const Wrapper = styled.div`
   font-weight: 600;
-  width: 110px;
+  width: 150px;
   position: relative;
   display: inline-block;
   text-align: center;
   font-style: italic;
-  color: var(--text-highlight);
+  color: #1599f5;
   transition: color 0.2s ease-out;
   & span {
     text-align: center;
     width: 100%;
   }
   @media only screen and (max-width: 80em) {
-    width: 105px;
+    width: 150px;
   }
   @media only screen and (max-width: 56.25em) {
-    width: 100px;
+    width: 150px;
   }
   @media only screen and (max-width: 80em) {
-    width: 95px;
+    width: 150px;
   }
   @media only screen and (max-width: 25em) {
-    width: 90px;
+    width: 150px;
   }
 `;
 

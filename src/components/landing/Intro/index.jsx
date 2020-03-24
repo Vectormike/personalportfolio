@@ -21,16 +21,14 @@ export const Intro = () => {
       <IntroWrapper as={Container}>
         <SmallWrapper>
           <Title className="animated bounceInRight" title={TitleSpring}>
-            Hi{' '}
+            Hello{' '}
             <span role="img" aria-label="Smile">
               😊
             </span>{' '}
             , I’m Victor
           </Title>
-          <SubTitle>
-            <h3 className="animated bounceInLeft">
-              A <WordsFading /> Full Stack JavaScript Developer
-            </h3>
+          <SubTitle className="animated bounceInLeft">
+            A <WordsFading /> Full Stack JavaScript Developer
           </SubTitle>
           <Flex>
             <Button
