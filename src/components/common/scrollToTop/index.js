@@ -15,22 +15,24 @@ const StyledWrapper = styled(animated.div)`
   margin-right: 1.5rem;
   bottom: 0;
   right: 0;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
-  background-color: #127eb1;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  background-color: #1599f5;
+  box-shadow: #4dabba 0px 13px 19px -6px;
+  transition: 0.5s;
   cursor: pointer;
   transition: all 0.2s ease-out;
   &:hover {
-    transform: translateY(-3px);
+    box-shadow: 0px 0px 17px 0px #4dabba;
+    transition: 0.5s;
   }
   &:active {
     transform: translateY(1px);
   }
   @media only screen and (max-width: 56.25em) {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
   }
   @media only screen and (max-width: 37.5em) {
     margin-bottom: 2rem;
