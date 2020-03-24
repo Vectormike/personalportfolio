@@ -7,7 +7,7 @@ const NavbarLinks = ({ desktop }) => (
     <AnchorLink className="effect-1" href="#about">
       About
     </AnchorLink>
-    <AnchorLink className="effect-1" href="#projects">
+    <AnchorLink smooth className="effect-1" href="#projects">
       Works
     </AnchorLink>
     <AnchorLink className="effect-1" href="#contact">
