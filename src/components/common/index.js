@@ -7,3 +7,5 @@ export * from './Card';
 export * from './CardHolder';
 export * from './Input';
 export * from './SEO';
+export * from './scrollToTop';
+export * from './wordsFading';
