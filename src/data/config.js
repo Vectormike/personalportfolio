@@ -2,7 +2,7 @@ module.exports = {
   defaultTitle: 'Victor Jonah',
   logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
   author: 'Victor Jonah',
-  url: '',
+  url: 'https://www.smakosh.com',
   legalName: 'Victor Jonah',
   defaultDescription: 'Hi, I’m Victor. I’m a Full-Stack JavaScript Developer!',
   socialLinks: {
