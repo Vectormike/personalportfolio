@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Email = styled.a`
-  color: #33333;
+  color: #089eca;
   font-size: 2rem;
   position: relative;
   font-weight: 600;
@@ -24,7 +24,7 @@ export const SocialWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   @media only screen and (max-width: 56.25em) {
     margin-bottom: 8rem;
   }
@@ -36,14 +36,14 @@ export const SocialWrapper = styled.div`
 export const StyledLink = styled.a`
   text-decoration: none;
   border-radius: 50%;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #089eca;
-  margin: 0 1.5rem;
+  border: 1.2px solid #089eca;
+  margin: 0 1.1rem;
   transition: all 0.2s ease-out;
   &:hover {
     background-color: #fff;
@@ -67,11 +67,11 @@ export const StyledLink = styled.a`
 `;
 
 export const StyledIcon = styled(FontAwesomeIcon)`
-  color: #h;
-  font-size: 2.2rem;
+  color: #333;
+  font-size: 1.2rem;
   transition: color 0.2s ease-out;
   ${StyledLink}:hover & {
-    color: var(--background);
+    color: #029eca;
   }
   @media only screen and (max-width: 56.25em) {
     font-size: 2rem;
