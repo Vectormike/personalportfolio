@@ -29,7 +29,7 @@ export const Intro = () => {
             , I’m Victor
           </Title>
           <SubTitle className="animated bounceInLeft">
-            A <WordsFading /> Full Stack JavaScript Developer
+            A <WordsFading /> JavaScript Developer
           </SubTitle>
           <Flex>
             <Button

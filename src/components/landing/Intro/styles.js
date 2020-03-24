@@ -32,7 +32,7 @@ export const Title = styled(animated.h1)`
   margin-bottom: 2rem;
   line-height: 1.3;
   font-size: 2rem;
-  color: #333;
+  color: #575757;
   transition: color 0.2s ease-out;
   @media only screen and (max-width: 56.25em) {
     font-size: 6rem;
@@ -51,17 +51,17 @@ export const Title = styled(animated.h1)`
 `;
 
 export const SubTitle = styled(animated.h2)`
-  color: var(--text);
+  color: #575757;
   font-weight: 400;
   margin: 0;
   margin-bottom: 7rem;
   font-size: 1.8rem;
   transition: color 0.2s ease-out;
   @media only screen and (max-width: 56.25em) {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   @media only screen and (max-width: 25em) {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `;
 
