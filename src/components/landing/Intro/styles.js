@@ -61,7 +61,7 @@ export const SubTitle = styled(animated.h2)`
     font-size: 1.4rem;
   }
   @media only screen and (max-width: 25em) {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 `;
 
