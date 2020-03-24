@@ -9,6 +9,7 @@ module.exports = {
     twitter: 'http://www.twitter.com/Vectormike_',
     github: 'https://github.com/Vectormike',
     linkedin: 'https://linkedIn.com/Vectormike',
+    email: 'victorjonah199@gmail.com',
   },
   googleAnalyticsID: '',
   themeColor: '#6b63ff',
