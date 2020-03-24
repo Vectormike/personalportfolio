@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 4rem 0;
+  padding: 1rem 0;
+
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -23,15 +24,15 @@ export const Details = styled.div`
 
   h1 {
     margin-bottom: 2rem;
-    font-size: 26pt;
-    color: #212121;
+    font-size: 16pt;
+    color: #1599f5;
   }
 
   p {
     margin-bottom: 2.5rem;
-    font-size: 20pt;
+    font-size: 10pt;
     font-weight: normal;
-    line-height: 1.3;
+    line-height: 1.1;
     color: #707070;
   }
 `;
