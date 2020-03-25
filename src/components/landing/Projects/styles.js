@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 2rem 2rem;
+  font-family: 'Indie Flower', cursive;
 `;
 
 export const Title = styled.h2`
