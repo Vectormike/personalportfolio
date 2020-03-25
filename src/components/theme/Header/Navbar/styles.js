@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 
   .name {
     color: #1599f5;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Indie Flower', cursive;
     font-size: 40px;
     text-decoration: none;
   }

@@ -21,7 +21,7 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <SmallWrapper>
-          <Title className="animated bounceInRight" title={TitleSpring}>
+          <Title className="text animated bounceInRight" title={TitleSpring}>
             Hello{' '}
             <span role="img" aria-label="Smile">
               😊

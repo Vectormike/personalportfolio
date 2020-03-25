@@ -8,6 +8,10 @@ export const Wrapper = styled.div`
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
+
+  .text {
+    font-family: 'Indie Flower', cursive;
+  }
 `;
 
 export const SmallWrapper = styled.div`
