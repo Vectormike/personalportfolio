@@ -9,4 +9,3 @@ export * from './Input';
 export * from './SEO';
 export * from './scrollToTop';
 export * from './wordsFading';
-export * from './scrollBar';
