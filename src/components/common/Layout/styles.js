@@ -1,11 +1,41 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const Global = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@font-face {
+  font-family: 'Indie Flower', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+}
   html {
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Indie Flower', cursive;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    
+    /* width */
+    ::-webkit-scrollbar {
+      width: 12px;
+      background-color: #F5F5F5;
+    }
 
+    /* Track */
+    ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+    }
+ 
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+      background-color: #555;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #089eca; 
+    }
     article,
     aside,
     details,
